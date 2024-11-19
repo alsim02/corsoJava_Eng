@@ -1,5 +1,3 @@
-package giorno1;
-
 import java.util.Scanner;
 
 public class Esercizi_Giorno1 {
