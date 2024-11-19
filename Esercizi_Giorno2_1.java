@@ -35,6 +35,7 @@ public class Esercizi_Giorno2_1 {
 
             System.out.println("Posti");
 
+            System.out.println("------------------------------------");
             // Visualizzo tutti i posti ad ogni ciclo
             for(int righe = 0; righe < posti.length; righe++){
                 for(int colonne = 0; colonne < posti[righe].length; colonne++){
@@ -42,7 +43,10 @@ public class Esercizi_Giorno2_1 {
                 }
                 System.out.println();
             }
+            System.out.println("------------------------------------");
 
+
+            System.out.println("------------------------------------");
             System.out.println("Effettua Prenotazione");
             System.out.println("Inserire il tuo nome: ");
             String nome = sc.next();
@@ -67,6 +71,7 @@ public class Esercizi_Giorno2_1 {
                 persone.add(nome);
                 numeroPostiPrenotati+=1;
             }
+            System.out.println("------------------------------------");
 
 
             System.out.println("Cerca Prenotazione");
@@ -97,14 +102,17 @@ public class Esercizi_Giorno2_1 {
             }else{
                 System.out.println("Il nome non è stato trovato, ci dispiace");
             }
+            System.out.println("------------------------------------");
 
             System.out.println("Visualizzo tutti i posti attualmente prenotati e disponibili");
+            System.out.println("------------------------------------");
             for(int righe = 0; righe < posti.length; righe++){
                 for(int colonne = 0; colonne < posti[righe].length; colonne++){
                     System.out.print(posti[righe][colonne]+" ");
                 }
                 System.out.println();
             }
+            System.out.println("------------------------------------");
 
             System.out.println("Report attuale: ");
             System.out.println("Numero di posti prenotati: "+numeroPostiPrenotati);
