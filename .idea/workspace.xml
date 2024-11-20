@@ -37,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Biblioteca.executor": "Run",
+    "Application.Chef.executor": "Run",
     "Application.Esercizi_Giorno1.executor": "Run",
     "Application.Esercizi_Giorno2.executor": "Run",
     "Application.Esercizi_Giorno2_1.executor": "Run",
