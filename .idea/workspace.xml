@@ -26,9 +26,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2p4O25kD7kT34EpL1PSXoimtzbd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Biblioteca.executor": "Run",
     "Application.Esercizi_Giorno1.executor": "Run",
     "Application.Esercizi_Giorno2.executor": "Run",
     "Application.Esercizi_Giorno2_1.executor": "Run",

@@ -3,11 +3,16 @@ import java.util.Scanner;
 
 public class Esercizi_Giorno2_2 {
 
+    public static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
         //qui tengo traccia di tutte le spedizioni
         ArrayList<int[][]> spedizioni = new ArrayList<>();
+        //Stringa del tipo "giorno-mese-anno"
+        ArrayList<String> dataSpedizioni = new ArrayList<String>();
+        String data = "";
 
         boolean continua = true;
         do{
@@ -21,9 +26,10 @@ public class Esercizi_Giorno2_2 {
             switch (scelta){
                 case 1:
                     spedizioni.add(aggiungiSpedizione());
+                    dataSpedizioni.add(impostaDataSpedizione());
                     break;
                 case 2:
-                    visualizzaDatiSpedizioni(spedizioni);
+                    visualizzaDatiSpedizioni(spedizioni,dataSpedizioni);
                     break;
                 case 3:
                     totalePennePerColore(spedizioni);
@@ -48,21 +54,30 @@ public class Esercizi_Giorno2_2 {
 
     public static int[][] aggiungiSpedizione(){
         int[][] mat = new int[4][1];
-        Scanner sc = new Scanner(System.in);
 
-        String[] coloriStringhe = {"Rosso","Blu","Verde","Nero"};
+        int numeroPenne = 0;
+
+        //String[] coloriStringhe = {"Rosso","Blu","Verde","Nero"};
 
         for(int i = 0; i<mat.length; i++){
-            System.out.println("Inserire numero di penne per il colore "+coloriStringhe[i]);
-            int numeroPenne = sc.nextInt();
-            mat[i][0] = numeroPenne;
+            //System.out.println("Inserire numero di penne per il colore "+coloriStringhe[i]);
+            //il numero di penne per ordine viene randomizzato, numero da 0 a 100
+            //casting esplicito da double -> int
+            numeroPenne = (int) (Math.random()*100);
         }
 
         return mat;
     }
 
-    public static void visualizzaDatiSpedizioni(ArrayList<int[][]> spedizioni){
+    public static String impostaDataSpedizione(){
+        System.out.println("Inserire data di spedizione nel formato g-m-a");
+        String data = sc.next();
+        return data;
+    }
 
+    public static void visualizzaDatiSpedizioni(ArrayList<int[][]> spedizioni, ArrayList<String> dataSpedizioni){
+
+        int cont = 0; //contatore per le dataSpedizioni
         for(int[][] x: spedizioni){
             System.out.println("Spedizione numero: "+spedizioni.indexOf(x));
             for(int i = 0; i<x.length;i++){
@@ -81,6 +96,8 @@ public class Esercizi_Giorno2_2 {
                         break;
                 }
             }
+            System.out.println("La spedizione partirà in data: "+dataSpedizioni.get(cont));
+            cont++;
             System.out.println("-------------");
         }
     }
