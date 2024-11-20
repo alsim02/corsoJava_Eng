@@ -42,6 +42,7 @@
     "Application.Esercizi_Giorno2.executor": "Run",
     "Application.Esercizi_Giorno2_1.executor": "Run",
     "Application.Esercizi_Giorno2_2.executor": "Run",
+    "Application.Squadra.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
     "Notification.DoNotAsk-Vcs Important Messages": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
