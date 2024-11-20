@@ -8,6 +8,7 @@ public class Biblioteca {
     //istanza singleton di Biblioteca
     private static Biblioteca b = new Biblioteca();
 
+    //costruttore
     public Biblioteca(){
 
     }
