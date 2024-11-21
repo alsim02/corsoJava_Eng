@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Videoteca {
 
     private ArrayList<Film> filmDisponibili = new ArrayList<Film>();
+    private ArrayList<Film> filmGiaNoleggiati = new ArrayList<Film>();
     private ArrayList<Utente> utentiNoleggiatori = new ArrayList<Utente>();
     private String nomeVideoteca;
     private int numeroFilmMassimi;
@@ -15,6 +16,7 @@ public class Videoteca {
     }
 
     public void getUtentiNoleggiatori() {
+        System.out.println("Utenti registrati nel sistema Videoteca");
         for(Utente x: utentiNoleggiatori){
             System.out.println(x.getIDutente());
         }
@@ -39,7 +41,7 @@ public class Videoteca {
         for(Utente x : utentiNoleggiatori){
             if(x.equals(u)){
                 trovato = true;
-                System.out.println("-Utente già presente nel sistema Videoteca-");
+                System.out.println("-Utente è già presente nel sistema Videoteca-");
                 break;
             }
         }
@@ -80,12 +82,12 @@ public class Videoteca {
 
     //questo metodo deve essere invocato ogni volta che un utente prova a noleggiare un film
     public boolean disponibilitaFilm(Film f){
-        for(Film x: filmDisponibili){
+        for(Film x: filmGiaNoleggiati){
             if(x.equals(f)){
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     //questo metodo deve essere invocato ogni volta che un utente prova a noleggiare un film, in qunato deve registrarsi nella videoteca
@@ -98,6 +100,18 @@ public class Videoteca {
         return false;
     }
 
+    public void aggiungiFilmGiaNoleggiato(Film f){
+        filmGiaNoleggiati.add(f);
+    }
+
+    private void getFilmGiaNoleggiati() {
+
+        System.out.println("Film già noleggiati");
+        for(Film x:filmGiaNoleggiati){
+            System.out.println(x.getTitolo());
+        }
+    }
+
     public static void main(String[] args){
 
         Videoteca v = new Videoteca("A",3);
@@ -106,6 +120,7 @@ public class Videoteca {
         Utente u2 = new Utente("a2","topolino");
 
         v.aggiungiUtenteNoleggiatore(u1);
+        v.aggiungiUtenteNoleggiatore(u2);
         //v.aggiungiUtenteNoleggiatore(u1); //se provo ad aggiungere lo stesso utente si triggera
 
         Film f1 = new Film("La grande G","1998",v);
@@ -124,10 +139,12 @@ public class Videoteca {
         //u1.noleggiaFilm(f4); //questo metodo triggera il controllo del numero massimo di noleggi possibili in una data videoteca
 
         u2.noleggiaFilm(f1);
-        u2.noleggiaFilm(f1); //riprova a noleggiare il film, ora è registrato va a buon fine il processo
+
+        Utente u3 = new Utente("a5","Maurizio");
+        u3.noleggiaFilm(f4);
 
         v.getUtentiNoleggiatori();
-
+        v.getFilmGiaNoleggiati();
 
     }
 
