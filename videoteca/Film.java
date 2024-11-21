@@ -31,4 +31,17 @@ public class Film {
     public void setAnnoUscita(String annoUscita) {
         this.annoUscita = annoUscita;
     }
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        //Casting
+        Film film = (Film) o;
+
+        return this.titolo == film.getTitolo();
+    }
 }
