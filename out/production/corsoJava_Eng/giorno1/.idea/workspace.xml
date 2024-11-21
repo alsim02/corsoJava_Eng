@@ -26,9 +26,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2p4O25kD7kT34EpL1PSXoimtzbd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,17 +36,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Biblioteca.executor": "Run",
+    "Application.Chef.executor": "Run",
     "Application.Esercizi_Giorno1.executor": "Run",
     "Application.Esercizi_Giorno2.executor": "Run",
     "Application.Esercizi_Giorno2_1.executor": "Run",
     "Application.Esercizi_Giorno2_2.executor": "Run",
+    "Application.Squadra.executor": "Run",
+    "Application.Videoteca.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
     "Notification.DoNotAsk-Vcs Important Messages": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "<unknown>",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alsimeone/IdeaProjects/Esercizi"
+    "last_opened_file_path": "C:/Users/alsimeone/IdeaProjects/corsoJava_Eng"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
