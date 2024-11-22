@@ -42,6 +42,8 @@
     "Application.Esercizi_Giorno2.executor": "Run",
     "Application.Esercizi_Giorno2_1.executor": "Run",
     "Application.Esercizi_Giorno2_2.executor": "Run",
+    "Application.Menu.executor": "Run",
+    "Application.Persona.executor": "Run",
     "Application.Squadra.executor": "Run",
     "Application.Videoteca.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
@@ -50,9 +52,29 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "<unknown>",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alsimeone/IdeaProjects/corsoJava_Eng"
+    "last_opened_file_path": "C:/Users/alsimeone/IdeaProjects/Esercizi"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Persona" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="giorno1.polimorfismo.Persona" />
+      <module name="corsoJava_Eng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="giorno1.polimorfismo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Persona" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
